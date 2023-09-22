@@ -1,0 +1,15 @@
+header{
+    background-image: url(star-wars-banner.webp);
+    height: 6em;
+    width: 100vw;
+    padding: 2em;
+    position:fixed;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+}
+#handling{
+    position: relative;
+    top:10em
+    
+}
