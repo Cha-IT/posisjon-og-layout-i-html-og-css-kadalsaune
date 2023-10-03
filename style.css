@@ -1,0 +1,112 @@
+
+*{ /* CSS-regler som gjelder på _alle_ elementer. */
+    box-sizing: border-box;
+}
+
+
+body{ /* Generelle stilregler for hele websiden  */
+    font-family: Arial, Helvetica, sans-serif;
+    color:dimgray;
+}
+
+a{ /* Regler som gjelder for alle lenker */
+    color:darkslategrey;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4{ /* Regler for alle overskriftstiler */
+    text-align: center;
+    font-weight: normal;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 23em;
+    width: 100vw;
+    padding: 2em;
+    padding-bottom: 0px;
+    background-color: aliceblue;
+    font-size: large;
+    text-align: justify;
+    z-index: 10;
+}
+
+header h1{
+    font-size: 3em;
+    width: fit-content;
+    margin:auto;
+}
+nav{
+    position: relative;
+    /* top: -3em; */
+}
+
+nav h2{
+    position:relative;
+    right: 0em;
+}
+
+nav ul{
+    position: relative;
+    top: -4em;
+    /* Fjerner kulepunktene fra lista */
+    list-style-type: none;
+
+    /* Gjør denne boksen til flex-container, som aktiverer flex for alle barn-elementer. */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+
+
+nav li a{
+    display: block;
+    padding: 1em;
+    margin:2px;
+    background-color: rgb(199, 156, 239);
+}
+
+nav li a:hover{
+    background-color: rgb(126, 81, 169);
+
+}
+
+nav .flex-container{
+       
+}
+
+section{
+    height: 100vh;
+    background-color: aquamarine;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 1em;
+}
+
+main{
+    position: relative;
+    top: 26em;
+
+}
+
+footer{
+
+}
+
+.beskrivendeTekst{
+    width: 14em;
+    margin: auto;
+    border: solid 1px;
+    padding: 0.5em;
+    font-size: 0.7em;
+    position: relative;
+    left: 15em;
+    top: -6em
+}
+
